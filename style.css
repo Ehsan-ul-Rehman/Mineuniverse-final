@@ -1,0 +1,364 @@
+body{
+    background-color:  #0F1219;
+    background-image: url(./img/background.png);
+    font-family: Cabin;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+  display: inline-block;
+  box-shadow: 0 0 22px 0px rgba(66, 133, 244, 0.5);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.swiper {
+    width: 500px;
+    height: 520px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+
+  .swiper2 .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .cards{
+    background-image: url(./img/card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 340px;
+    margin-left: 120px;
+    margin-right: -60px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    transition: 0.5s;
+  }
+  .card {
+    margin-left: -125px;
+    margin-right: 125px;
+  }
+  .cards:hover{
+    background-image: url(./img/Vector.png);
+  }
+
+  .hide {
+    display: none;
+  }
+  .map-container {
+    text-align: center;
+    color: white;
+  }
+
+  /* .div-toggle{
+    background-color: #161B27;
+  } */
+  .mod-card1{
+    background-image: url(./img/Group\ 9202.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mod-card2{
+    background-image: url(./img/Group\ 9203.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mod-card3{
+    background-image: url(./img/Group\ 9204.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mod-card4{
+    background-image: url(./img/Group\ 9205.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .border-dashed:hover{
+    background-image: linear-gradient(#4285F4, #0C53C7);
+    box-shadow: 0 0 22px 0px rgba(66, 133, 244, 0.5);
+    border: none;
+  }
+  .btn-notifyme {
+    display: inline-block;
+    box-shadow: 0 0 12px 0px rgba(66, 133, 244, 0.5);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .db-btn:hover{
+    box-shadow: 0 0 20px 0px rgba(66, 133, 244, 0.5);
+  }
+  
+  .active1, .btn-mod-sec:hover {
+    background-image: linear-gradient(#4285F4, #0C53C7);
+  }
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #272e41;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.testimonial-card{
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.testimonial-card:hover{
+  transform: scale(1.1);
+  z-index: 999;
+}
+.btn-div-sec{
+  border-bottom: 2px solid rgba(61, 61, 61, 0.534);
+}
+.active1, .btn-div-sec:hover {
+  border-bottom: 2px solid #4285F4;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: -3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid #adb5bd;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: #adb5bd;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
+
+.active2, .btn-server-sec:hover {
+  background-color: #0F1219;
+  color: #5595fc;
+}
+/* .active2, .toggle-btn:hover {
+  background-color: #0F1219;
+  color: #5595fc;
+} */
+.serverpage-cards:hover{
+  background-image: url(./img/server-card-bg.png);
+  color: black; 
+}
+.serverpage-cards:hover p{
+  color: black;
+}
+
+
+
+.video-container {
+  position: relative;
+  /* max-width: 600px; Set the maximum width of the video container */
+}
+
+video {
+  width: 100%;
+}
+
+.play-button {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-button:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 26px solid white;
+}
+
+.play-button.paused:before {
+  border-left: 12px double white;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .slider {
+    display: none;
+  }
+  .toggler-btn {
+    /* position: fixed; */
+    /* top: 10px; */
+    /* right: 10px; */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #1C222F;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .sidebar {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+  }
+  .dashboard {
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-color: #0F1219;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px){
+
+  .slider {
+    display: none;
+  }
+
+  .toggler-btn {
+    /* position: fixed; */
+    /* top: 10px; */
+    /* right: 10px; */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #1C222F;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .sidebar {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+  }
+  .dashboard {
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-color: #0F1219;
+    z-index: 999;
+  }
+
+}

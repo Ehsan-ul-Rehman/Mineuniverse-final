@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Racing+Sans+One&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="lg:w-[20%] border-r-[1px] border-gray-600 dashboard sidebar lg:block" id="sidebar" style="font-family: Roboto Mono ;">
+            <img src="./img/M-logo.png" class="h-16 mx-auto my-16 lg:mb-44 mb-8" alt="">
+            <div>
+                <a href="./dashboard.html" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-house text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Dashboard</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./serverpage.html" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-server text-2xl pr-9"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Servers</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./modspage.html"class="flex bg-gradient-to-r from-blue-500 to-transparent db-btn text-white justify-start px-12 py-4 my-2" style="box-shadow: 0 0 20px 0px rgba(66, 133, 244, 0.5);">
+                <i class="fa-solid fa-code text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Mods</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-bookmark text-2xl pr-10"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Saved</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-layer-group text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Collections</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-crown text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold pt-1">Premium</h2>
+                </a>
+            </div>
+
+            <div class="lg:h-80"></div>
+
+
+            <div>
+                <a href="#" class="flex text-white justify-start px-8 py-4 my-2 lg:mt-0 mt-8 ">
+                <i class="fa-solid fa-gear text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold">Setting</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./homepage.html" class="flex text-white justify-start px-8 py-4 my-2 lg:mb-32">
+                <i class="fa-solid fa-right-from-bracket text-2xl pr-8"></i>
+                <h2 class=" lg:text-xl text-base font-semibold">Logout</h2>
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-[80%] w-full">
+            <div class="flex lg:justify-end justify-around w-auto py-8 border-b-[1px] border-gray-600 dashboard-nav">
+                
+                <div class="relative inline-block dropdown">
+                    <button class="text-white border-none dropbtn">
+                        <img src="./img/bell-icon.png" class="h-12 lg:mr-6 mr-3" alt="">
+                    </button>
+                    <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm px-4 w-72">
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white text-center text-sm py-4">See more notifications</div>
+                    </div>
+                </div>
+    
+                 <div class="lg:block md:block hidden px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                    <a href="#">
+                    <p class="text-xs text-gray-500">Ponits</p>
+                    <div class="flex">
+                        <img src="./img/dash-nav-coin1.png" class="h-5 pr-1" alt="">
+                        <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                    <a href="#">
+                    <p class="text-xs text-gray-500">Balance</p>
+                    <div class="flex">
+                        <img src="./img/dash-nav-coin2.png" class="h-5 pr-1" alt="">
+                        <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="relative inline-block dropdown lg:mr-20  my-auto">
+                    <button class="text-white border-none dropbtn">
+                        <div class="flex lg:space-x-4 space-x-2">
+                            <img src="./img/dash-drop-pic.png" class="lg:h-12 md:h-12 h-8" alt="">
+                            <p class="lg:text-base text-xs my-auto">Sheraz Naseem</p>
+                            <i class="fa-solid fa-caret-down my-auto text-xl"></i>
+                        </div>
+                    </button>
+                    <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm p-4">
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Profile</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Settings</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Language</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Community Resources</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Help & Support</a>
+                      <a class="text-white p-3 block " href="#">Logout</a>
+                    </div>
+                </div>
+                <button class="toggler-btn lg:hidden my-auto mx-2" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="lg:flex lg:pt-20 pt-10 px-10 lg:space-y-0 space-y-4">
+                <input type="search" name="search" id="" placeholder="&#61442;" class="h-10 text-start w-72 bg-[#161B27] p-3 px-6 rounded-full outline-none " style="font-family: FontAwesome; box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.205);">
+
+                <div class="relative inline-block dropdown mr-20">
+                    <button class="text-white border-none dropbtn">
+                        <div class="flex justify-between bg-[#161B27] h-10 rounded-full w-64 px-6 mx-4 text-gray-500" style="box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.205);">
+                            <p class="text-xs my-auto">All Categorys</p>
+                            <i class="fa-solid fa-caret-down my-auto text-xl"></i>
+                        </div>
+                    </button>
+                    <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm p-4">
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">---------</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">---------</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">---------</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">---------</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">---------</a>
+                      <a class="text-white p-3 block " href="#">---------</a>
+                    </div>
+                </div>
+                
+                <div class="flex justify-around">
+                <a href="" class="flex gap-x-3 px-6 -ml-14">
+                    <i class="fa-solid fa-filter text-blue-500 text-3xl my-auto"></i>
+                    <p class="text-white my-auto">Filter</p>
+                </a>
+
+                <div class="text-white px-6 my-auto"><a href="">Clear</a></div>
+
+                <button class="btn px-6 py-2 rounded lg:mx-6 mx-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">Submit Mod</button>
+                </div>
+
+            </div>
+
+            <div class="lg:flex-col px-12 my-16">
+                <div class="lg:flex justify-between lg:space-y-0 space-y-4">
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-1.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-2.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-3.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex justify-between lg:space-y-0 space-y-4 pt-12">
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-4.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-5.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                    <div class="p-5 bg-[#161B27] rounded-xl">
+                        <img src="./img/mods-cards-6.png" alt="" class="h-48">
+                        <div class="flex pt-4">
+                            <img src="./img/testimonial-pic-3.png" alt="" class="h-12 pr-3">
+                            <p class="text-gray-400 font-normal my-auto text-sm" style="font-family: Roboto Mono;">Nicole Brown</p>
+                            <img src="./img/heart-icon.png" alt="" class="h-6 my-auto ml-auto">
+                        </div>
+                        <div class="flex justify-between py-4 border-b-[1px] border-b-gray-600">
+                            <p class="text-white w-56 text-sm">Information About UI/UX Design Degree</p>
+                            <p class="text-xs text-gray-500 my-auto">v 1.12.1</p>
+                        </div>
+                        <div class="flex justify-between pt-3">
+                            <div class="flex gap-x-1"><img src="./img/download-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">10K Downloads</p></div>
+                            <div class="flex gap-x-1"><img src="./img/calender-icon.png" alt="" class="h-3 my-auto"><p class="text-gray-500 text-[8px]">05/jan/2023</p></div>
+                        </div>
+                        <div class="flex pt-8">
+                            <button class="btn px-6 py-2" style="background-image: linear-gradient(#4285F4, #0C53C7);">View More</button>
+                            <p class="text-white text-[8px] my-auto ml-auto">5.0 (12)</p><img src="./img/star-rating.png" alt="" class="ml-3 h-3 my-auto">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        // In-page JavaScript
+        function toggleSidebar() {
+          var sidebar = document.getElementById("sidebar");
+          sidebar.classList.toggle("active");
+        }
+        </script>
+
+
+
+</body>
+</html>

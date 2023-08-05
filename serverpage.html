@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Racing+Sans+One&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="lg:w-[20%] border-r-[1px] border-gray-600 dashboard sidebar lg:block" id="sidebar" style="font-family: Roboto Mono ;">
+            <img src="./img/M-logo.png" class="h-16 mx-auto my-16 mb-44" alt="">
+            <div>
+                <a href="./dashboard.html" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-house text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Dashboard</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./serverpage.html" class="flex bg-gradient-to-r from-blue-500 to-transparent db-btn text-white justify-start px-12 py-4 my-2" style="box-shadow: 0 0 20px 0px rgba(66, 133, 244, 0.5);">
+                <i class="fa-solid fa-server text-2xl pr-9"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Servers</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./modspage.html" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-code text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Mods</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-bookmark text-2xl pr-10"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Saved</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-layer-group text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Collections</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-crown text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Premium</h2>
+                </a>
+            </div>
+
+            <div class="lg:h-80"></div>
+
+
+            <div>
+                <a href="#" class="flex text-white justify-start px-8 py-4 my-2 lg:mt-0 mt-8">
+                <i class="fa-solid fa-gear text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold">Setting</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./homepage.html" class="flex text-white justify-start px-8 py-4 my-2 lg:mb-32">
+                <i class="fa-solid fa-right-from-bracket text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold">Logout</h2>
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-[80%] w-full">
+          <div class="flex lg:justify-end justify-around w-auto py-8 border-b-[1px] border-gray-600 dashboard-nav">
+                
+            <div class="relative inline-block dropdown">
+                <button class="text-white border-none dropbtn">
+                    <img src="./img/bell-icon.png" class="h-12 lg:mr-6 mr-3" alt="">
+                </button>
+                <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm px-4 w-72">
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                    <a href="#">
+                        <div class="flex">
+                            <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                            <div class="flex-col leading-snug">
+                            <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                            <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                            <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="text-white text-center text-sm py-4">See more notifications</div>
+                </div>
+            </div>
+
+             <div class="lg:block md:block hidden px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                <a href="#">
+                <p class="text-xs text-gray-500">Ponits</p>
+                <div class="flex">
+                    <img src="./img/dash-nav-coin1.png" class="h-5 pr-1" alt="">
+                    <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                </div>
+                </a>
+            </div>
+            <div class="px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                <a href="#">
+                <p class="text-xs text-gray-500">Balance</p>
+                <div class="flex">
+                    <img src="./img/dash-nav-coin2.png" class="h-5 pr-1" alt="">
+                    <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                </div>
+                </a>
+            </div>
+            
+            <div class="relative inline-block dropdown lg:mr-20  my-auto">
+                <button class="text-white border-none dropbtn">
+                    <div class="flex lg:space-x-4 space-x-2">
+                        <img src="./img/dash-drop-pic.png" class="lg:h-12 md:h-12 h-8" alt="">
+                        <p class="lg:text-base text-xs my-auto">Sheraz Naseem</p>
+                        <i class="fa-solid fa-caret-down my-auto text-xl"></i>
+                    </div>
+                </button>
+                <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm p-4">
+                  <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Profile</a>
+                  <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Settings</a>
+                  <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Language</a>
+                  <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Community Resources</a>
+                  <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Help & Support</a>
+                  <a class="text-white p-3 block " href="#">Logout</a>
+                </div>
+            </div>
+            <button class="toggler-btn lg:hidden my-auto mx-2" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+            <div class="map-container">
+              <div class="lg:flex justify-between lg:p-12 p-6">
+                <div class="inner-basic division-map div-toggle bg-[#161B27] text-gray-500 px-1 py-1 rounded-full" data-target=".division-details" id="divisiondetail" style="box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.205);">
+                  <div class="flex justify-between" id="myDIV">
+                  <button class="map-point-sm lg:px-20 px-8 py-1 rounded-full btn-server-sec active2" id="btn" data-show=".darwin">
+                    <div class="content">
+                      <div class="centered-y">
+                        <p>Server</p>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="map-point-sm lg:px-20 px-8 py-1 rounded-full btn-server-sec" id="btn" data-show=".ptown">
+                    <div class="content">
+                      <div class="centered-y">
+                        <p>Online</p>
+                      </div>
+                    </div>
+                  </button>
+                  <button class="map-point-sm lg:px-24 px-8 py-1 rounded-full btn-server-sec" id="btn" data-show=".philly">
+                    <div class="content">
+                      <div class="centered-y">
+                        <p>Top</p>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                </div>
+
+                <input type="search" name="search" id="" placeholder="&#61442;" class="h-10 text-start lg:w-80 bg-[#161B27] p-3 rounded-full outline-none lg:mt-0 mt-6" style="font-family: FontAwesome; box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.205);">
+
+                </div><!-- end inner basic -->
+              </div>
+
+              <div class="map-container">
+                <div class="inner-basic division-details">
+                  <div class="darwin lg:px-16 px-6">
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-1.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-offline.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between lg:my-0 my-2">
+                        <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full "><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-2.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-online.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between lg:my-0 my-2">
+                        <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full"><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-3.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-online.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between lg:my-0 my-2">
+                        <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full"><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-4.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-online.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between lg:my-0 my-2">
+                        <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full"><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-5.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-offline.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between lg:my-0 my-2">
+                        <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full"><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-[#161B27] mb-8 py-4 lg:px-8 px-4 rounded-3xl serverpage-cards hover:text-black">
+                      <div class="lg:flex justify-between">
+                        <div class="flex justify-between">
+                        <h1 class="">Howly_Cubs</h1>
+                        <img src="./img/howly-cubs-6.png" alt="" class="lg:h-12 h-5 lg:ml-40 my-auto">
+                        </div>
+                        <div class="flex lg:my-0 my-2"><p class="text-xs"><span class="">Count:</span>100</p><img src="./img/server-card-online.png" alt="" class="h-4 pl-6"></div>
+                      </div>
+                      <p class="text-xs text-gray-500 text-start">Raydium DAO Initiative</p>
+                      <div class="lg:flex mt-3">
+                        <div class="flex justify-between">
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/location-icon.png" alt=""><p>Pakistan</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/setting-icon.png" alt=""><p>velocity 1.16-1.20</p></div>
+                        <div class="flex text-xs my-auto text-gray-500 pr-4"><img class="h-3 pr-1" src="./img/tag-icon.png" alt=""><p>survival</p></div>
+                        </div>
+                        <div class="flex justify-between">
+           lg:my-0 my-2              <div class="flex text-xs my-auto text-white pr-4"><p>6000</p><img class="h-3" src="./img/like-button.png" alt=""></div>
+
+                        <div class="lg:flex hidden bg-[#131620] pr-1 py-1 my-auto rounded-full"><p class="bg-green-400 h-2 w-2 rounded-full my-auto mx-8"></p><h6 class="text-gray-500 my-auto">play.pokesaga.org</h6><div class="flex px-4 py-2 ml-8 rounded-full bg-[#191E2C] text-sm"><h6 class="text-white">Copy IP </h6><img src="./img/copy-icon.png" class="h-4 mx-auto pl-4" alt=""></div></div>
+
+                        <button class=" px-8 lg:py-2 py-1 btn lg:ml-24" style="background-image: linear-gradient(#4285F4, #0C53C7);">Join Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ptown hide px-20">
+                    <h1 class="text-blue-500">EHSAN</h1>
+                  </div>
+                  <div class="philly hide px-20">
+                    <h1 class="text-pink-400">Ehsan</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).on('click', '.map-point-sm', function() {
+  var show = $(this).data('show');
+  $(show).removeClass("hide").siblings().addClass("hide");
+});
+</script>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("btn-server-sec");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active2");
+    current[0].className = current[0].className.replace(" active2", "");
+    this.className += " active2";
+    });
+  }
+  </script>
+
+<script>
+  // In-page JavaScript
+  function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("active");
+  }
+  </script>
+</body>
+</html>  

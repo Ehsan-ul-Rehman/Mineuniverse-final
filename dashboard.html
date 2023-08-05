@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Racing+Sans+One&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="flex">
+        <div class="lg:w-[20%] border-r-[1px] border-gray-600 dashboard sidebar lg:block" id="sidebar" style="font-family: Roboto Mono ;">
+            <img src="./img/M-logo.png" class="h-16 mx-auto my-16 mb-44" alt="">
+            <div>
+                <a href="#" class="flex bg-gradient-to-r from-blue-500 to-transparent db-btn text-white justify-start px-12 py-4 my-2" style="box-shadow: 0 0 20px 0px rgba(66, 133, 244, 0.5);">
+                <i class="fa-solid fa-house text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Dashboard</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./serverpage.html" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-server text-2xl pr-9"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Servers</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-code text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Mods</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-bookmark text-2xl pr-10"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Saved</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-layer-group text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Collections</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#" class="flex hover:bg-gradient-to-r from-blue-500 to-transparent db-btn text-gray-400 hover:text-white justify-start px-12 py-4 my-2">
+                <i class="fa-solid fa-crown text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold pt-1">Premium</h2>
+                </a>
+            </div>
+
+            <div class="lg:h-80"></div>
+
+
+            <div>
+                <a href="#" class="flex text-white justify-start px-8 py-4 my-2 lg:mt-0 mt-8">
+                <i class="fa-solid fa-gear text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold">Setting</h2>
+                </a>
+            </div>
+            <div>
+                <a href="./homepage.html" class="flex text-white justify-start px-8 py-4 my-2 lg:mb-32">
+                <i class="fa-solid fa-right-from-bracket text-2xl pr-8"></i>
+                <h2 class="lg:text-xl text-base font-semibold">Logout</h2>
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-[80%] w-full">
+            
+            <div class="flex lg:justify-end justify-around w-auto py-8 border-b-[1px] border-gray-600 dashboard-nav">
+                
+                <div class="relative inline-block dropdown">
+                    <button class="text-white border-none dropbtn">
+                        <img src="./img/bell-icon.png" class="h-12 lg:mr-6 mr-3" alt="">
+                    </button>
+                    <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm px-4 w-72">
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white py-2 block border-b-[1px] border-gray-700">
+                        <a href="#">
+                            <div class="flex">
+                                <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                <div class="flex-col leading-snug">
+                                <span class="text-sm pr-2">Kashan</span><span class="text-gray-500 text-[10px]">Invite you to join</span>
+                                <p class="text-[10px] font-extralight">Information About UI/UX Design Degree</p>
+                                <p class="text-[8px] text-gray-500">1 Minute ago</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="text-white text-center text-sm py-4">See more notifications</div>
+                    </div>
+                </div>
+
+                 <div class="lg:block md:block hidden px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                    <a href="#">
+                    <p class="text-xs text-gray-500">Ponits</p>
+                    <div class="flex">
+                        <img src="./img/dash-nav-coin1.png" class="h-5 pr-1" alt="">
+                        <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="px-2 py-1 text-center bg-[#191E2C] rounded-sm lg:mr-6 h-12">
+                    <a href="#">
+                    <p class="text-xs text-gray-500">Balance</p>
+                    <div class="flex">
+                        <img src="./img/dash-nav-coin2.png" class="h-5 pr-1" alt="">
+                        <p class="text-white lg:text-sm text-xs">$2,879.00</p>
+                    </div>
+                    </a>
+                </div>
+                
+                <div class="relative inline-block dropdown lg:mr-20  my-auto">
+                    <button class="text-white border-none dropbtn">
+                        <div class="flex lg:space-x-4 space-x-2">
+                            <img src="./img/dash-drop-pic.png" class="lg:h-12 md:h-12 h-8" alt="">
+                            <p class="lg:text-base text-xs my-auto">Sheraz Naseem</p>
+                            <i class="fa-solid fa-caret-down my-auto text-xl"></i>
+                        </div>
+                    </button>
+                    <div class="hidden absolute bg-[#191E2C] z-10 rounded dropdown-content text-sm p-4">
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Profile</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Settings</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Language</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Community Resources</a>
+                      <a class="text-white p-3 block border-b-[1px] border-gray-700" href="#">Help & Support</a>
+                      <a class="text-white p-3 block " href="#">Logout</a>
+                    </div>
+                </div>
+                <button class="toggler-btn lg:hidden my-auto mx-2" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="lg:flex">
+                <div class="lg:w-[60%] m-6 lg:mr-6 text-white">
+                    <div class="">
+                        <video src="./img/video-dummy.mp4" controls class="rounded-t-xl"></video>
+                        <div class="p-4 bg-[#161B27] rounded-b-xl">
+                            <div class="flex justify-between">
+                                <h1 class="text-sm">Lorum ipsim is simply dummy text of the printing and testing industry</h1>
+                                <h1 class="text-xs flex"><img src="./img/like-button.png" alt="" class="h-6 pr-2"><p class="pt-2">300 Like</p></h1>
+                            </div>
+                            <div class="flex justify-between text-[10px] pt-6">
+                              <p class=""><span class="text-gray-500 pr-2">minecart | winter comming</span><span>355 views</span></p>
+                              <p class=""><span>3 Hour ago</span></p>
+                            </div>
+                            <div class="flex justify-between pt-4">
+                                <h1 class="text-xs flex"><img src="./img/dash-drop-pic.png" alt="" class="h-10 pr-2"><p class="pt-2">Sheraz Naseem</p></h1>
+                                <button class="px-6 py-2 text-white btn" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="#">View More</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h1 class="text-white text-xl py-6">Recommended For You</h1>
+                        <div class="flex gap-3">
+                            <div class="bg-[#161B27] rounded-b-xl">
+                                <img src="./img/dashboard-card-1.png" alt="" class="">
+                                <div class="flex p-3 pb-0">
+                                    <img src="./img/ethos.png" alt="" class="pr-3 h-12">
+                                    <p class="text-white my-auto mr-auto">Ethos</p>
+                                    <button class="lg:px-4 px-2 rounded-lg lg:h-8 lg:my-auto my-3 text-xs" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="" class="">Get This</a></button>
+                                </div>
+                                <p class="text-gray-500 text-[8px] text-center pb-3 "><span>mar 2, 2023</span> | <span>192,555 watching</span> | <span>1M downloads</span></p>
+                            </div>
+                            <div class="bg-[#161B27] rounded-b-xl">
+                                <img src="./img/dashboard-card-2.png" alt="" class="">
+                                <div class="flex p-3 pb-0">
+                                    <img src="./img/ethos.png" alt="" class="pr-3 h-12">
+                                    <p class="text-white my-auto mr-auto">Ethos</p>
+                                    <button class="lg:px-4 px-2 rounded-lg lg:h-8 lg:my-auto my-3 text-xs" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="" class="">Get This</a></button>
+                                </div>
+                                <p class="text-gray-500 text-[8px] text-center pb-3 "><span>mar 2, 2023</span> | <span>192,555 watching</span> | <span>1M downloads</span></p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 pt-12">
+                            <div class="bg-[#161B27] rounded-b-xl">
+                                <img src="./img/dashboard-card-3.png" alt="" class="">
+                                <div class="flex p-3 pb-0">
+                                    <img src="./img/ethos.png" alt="" class="pr-3 h-12">
+                                    <p class="text-white my-auto mr-auto">Ethos</p>
+                                    <button class="lg:px-4 px-2 rounded-lg lg:h-8 lg:my-auto my-3 text-xs" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="" class="">Get This</a></button>
+                                </div>
+                                <p class="text-gray-500 text-[8px] text-center pb-3 "><span>mar 2, 2023</span> | <span>192,555 watching</span> | <span>1M downloads</span></p>
+                            </div>
+                            <div class="bg-[#161B27] rounded-b-xl">
+                                <img src="./img/dashboard-card-4.png" alt="" class="">
+                                <div class="flex p-3 pb-0">
+                                    <img src="./img/ethos.png" alt="" class="pr-3 h-12">
+                                    <p class="text-white my-auto mr-auto">Ethos</p>
+                                    <button class="lg:px-4 px-2 rounded-lg lg:h-8 lg:my-auto my-3 text-xs" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="" class="">Get This</a></button>
+                                </div>
+                                <p class="text-gray-500 text-[8px] text-center pb-3"><span>mar 2, 2023</span> | <span>192,555 watching</span> | <span>1M downloads</span></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="lg:w-[40%] m-6 lg:mr-10">
+                    <div class="map-container">
+                        <div class="">
+                          <div class="inner-basic division-map div-toggle" data-target=".division-details" id="divisiondetail">
+                            <div class="flex justify-around" id="myDIV">
+                            <button class="map-point-sm btn-div-sec active1 px-20 py-2" id="btn" data-show=".darwin">
+                              <div class="content">
+                                <div class="centered-y">
+                                  <p class="text-lg">Mod</p>
+                                </div>
+                              </div>
+                            </button>
+                            <button class="map-point-sm btn-div-sec px-20 py-2" id="btn" data-show=".ptown">
+                              <div class="content">
+                                <div class="centered-y">
+                                  <p class="text-lg">Server</p>
+                                </div>
+                              </div>
+                            </button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container text-start">
+                        <div class="inner-basic division-details">
+                          <div class="darwin">
+                            <div class="border-b-gray-800 border-b-2 pb-8">
+                                <p class="text-gray-500 py-4 ">Search</p>
+                                <input type="search" name="search" id="" placeholder="&#61442;" class="text-start w-96 bg-[#161B27] p-3 rounded-full outline-none" style="font-family: FontAwesome;">
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-500 py-3">Online Server</p>
+                                <label class="switch my-3">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-500 py-3">Overall Coeffficient</p>
+                                <p class="text-gray-500 py-3">2.7x</p>
+                            </div>
+                            <button class="btn w-full py-3 my-2 mb-12" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="" class="">Place</a></button>
+                            
+                            <div class="flex justify-between border-b-gray-800 border-b-2 pb-4">
+                                <p class="text-xs text-gray-500">Mod List</p>
+                                <p class="text-xs text-gray-500">Date</p>
+                                <p class="text-xs text-blue-500">View All</p>
+                            </div>
+                            <div class="">
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                                <div class="flex justify-between py-6  border-b-gray-800 border-b-2">
+                                    <div class="flex">
+                                        <img src="./img/dash-drop-pic.png" class="h-10 pr-2" alt="">
+                                        <div class="my-auto"><p class="">Ethos</p><p class="text-[10px] text-gray-500">1M Downloads</p></div>
+                                    </div>
+                                    <p class="text-[10px] text-gray-500 mt-7">Jan/05/2023</p>
+                                    <button class="px-4 py-1 h-8 text-xs btn my-auto rounded-lg" style="background-image: linear-gradient(#4285F4, #0C53C7);"><a href="">Get This</a></button>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="ptown hide">
+                            <p>Darwin Content here</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).on('click', '.map-point-sm', function() {
+  var show = $(this).data('show');
+  $(show).removeClass("hide").siblings().addClass("hide");
+});
+    </script>
+    
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn-div-sec");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active1");
+          current[0].className = current[0].className.replace(" active1", "");
+          this.className += " active1";
+          });
+        }
+    </script>
+
+    <script>
+    // In-page JavaScript
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>    
