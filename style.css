@@ -296,7 +296,7 @@ video::-webkit-media-controls-start-playback-button {
     cursor: pointer;
     background-color: #1C222F;
     border: none;
-    color: #fff;
+    color: #4285F4;
     font-size: 20px;
   }
   .sidebar.active {
@@ -307,10 +307,11 @@ video::-webkit-media-controls-start-playback-button {
     width: 60%;
     position: fixed;
     top: 0;
-    left: -60%;
+    bottom: 0;
+    left: -70%;
     background-color: #333;
     color: #fff;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     transition: left 0.3s ease;
   }
   .dashboard {
@@ -336,7 +337,7 @@ video::-webkit-media-controls-start-playback-button {
     cursor: pointer;
     background-color: #1C222F;
     border: none;
-    color: #fff;
+    color: #4285F4;
     font-size: 20px;
 
   }
@@ -348,10 +349,11 @@ video::-webkit-media-controls-start-playback-button {
     width: 40%;
     position: fixed;
     top: 0;
-    left: -60%;
+    bottom: 0;
+    left: -70%;
     background-color: #333;
     color: #fff;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     transition: left 0.3s ease;
   }
   .dashboard {
